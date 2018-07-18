@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Counter from './component/Counter'
+import CounterGroup from './component/CounterGroup'
+
 class App extends Component {
   render() {
     return (
@@ -11,7 +12,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          <Counter/>
+          <CounterGroup size="8"/>
         </p>
       </div>
     );

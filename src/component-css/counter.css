@@ -1,0 +1,30 @@
+.counter{
+margin: 10px;
+}
+div p{
+  display: inline-block;
+  font-size: 24px;
+  margin: 10px 5px;
+}
+.btn{
+  width: 36px;
+  height: 24px;
+  margin-right: 10px;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #aaa;
+  box-shadow: 0 0 1px #ccc;
+}
+.count{
+  margin-left: 10px;
+  display: inline-block;
+  width: 50px;
+}
+.sum{
+  font-size: 24px;
+  margin-left: 10px;
+  display: inline-block;
+  width: 60px;
+  border-bottom: 2px solid #ccc;
+}

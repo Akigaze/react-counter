@@ -1,5 +1,7 @@
 import React,{Component} from 'react'
 
+import '../component-css/counter.css';
+
 export default class Counter extends React.Component {
   constructor(props){
     super(props);
@@ -12,22 +14,24 @@ export default class Counter extends React.Component {
   countUp=()=>{
     let currentNum=this.state.count;
     this.setState({count:currentNum+1});
+    this.props.updateSum(1);
   }
   countDown(){
-    // let currentNum=this.state.count;
-    // this.setState({count:currentNum-1});
+    //setState支持Lambda表达式，第一个参数值为state原本的引用
     this.setState(prevState => ({
-      count: prevState.count+1
+      count: prevState.count-1
     }));
+    this.props.updateSum(-1);
+
   }
   render() {
     return(
-      <div>
+      <div class="counter">
         <button className="btn" onClick={this.countUp}>+</button>
         <button className="btn" onClick={this.countDown}>-</button>
         <p>
           count:
-          <span>{this.state.count}</span>
+          <span class="count">{this.state.count}</span>
         </p>
       </div>
     );
