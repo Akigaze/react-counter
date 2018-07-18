@@ -8,7 +8,6 @@ export default class Counter extends React.Component {
     this.state={count:0};
     //绑定的方式
     this.countDown = this.countDown.bind(this);
-
   }
   //箭头函数的方式
   countUp=()=>{
@@ -22,7 +21,6 @@ export default class Counter extends React.Component {
       count: prevState.count-1
     }));
     this.props.updateSum(-1);
-
   }
   render() {
     return(

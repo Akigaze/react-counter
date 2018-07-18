@@ -12,7 +12,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          <CounterGroup size="8"/>
+          <CounterGroup size="5"/>
         </p>
       </div>
     );

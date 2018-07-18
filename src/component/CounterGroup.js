@@ -7,13 +7,14 @@ export default class CounterGroup extends Component {
     super(props);
     this.state={summary:0};
   }
-  createCounter(){
-    return <Counter updateSum={this.updateSum}/>;
-  }
   updateSum=(num)=>{
     this.setState(prevState=>({
       summary:prevState.summary+num
     }));
+  }
+
+  createCounter(){
+    return <Counter updateSum={this.updateSum}/>;
   }
   createMultipleCounters(size){
     let counters=[];
