@@ -14,8 +14,11 @@ export default class Counter extends React.Component {
     this.setState({count:currentNum+1});
   }
   countDown(){
-    let currentNum=this.state.count;
-    this.setState({count:currentNum-1});
+    // let currentNum=this.state.count;
+    // this.setState({count:currentNum-1});
+    this.setState(prevState => ({
+      count: prevState.count+1
+    }));
   }
   render() {
     return(
